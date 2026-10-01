@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KvarnerWind – Support</title>
+<style>
+  :root { color-scheme: light dark; --fg: #111; --bg: #fff; --muted: #666; --accent: #1f9bb8; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #eee; --bg: #0b1119; --muted: #aaa; } }
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; color: var(--fg); background: var(--bg); line-height: 1.55; }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; } h2 { margin-top: 2rem; font-size: 1.2rem; }
+  .sub { color: var(--muted); margin-top: 0; } a { color: var(--accent); } .warn { border-left: 4px solid #e0a800; padding: .6rem 1rem; background: rgba(224,168,0,.08); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; } ul { padding-left: 1.2rem; } .small { font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<h1>KvarnerWind</h1>
+<p class="sub">Segelwetter für die Kvarner-Bucht: Windmodelle im Vergleich, Bora-Ampel, Warnungen</p>
+
+<p class="warn"><strong>Keine Gewähr.</strong> KvarnerWind zeigt Wettermodelle und amtliche Warnungen, berechnet daraus eine Einschätzung und ersetzt weder Seemannschaft noch den Blick zum Himmel. Die Bora-Ampel ist eine Faustregel aus Modellböen, Windrichtung, Meteoalarm-Warnungen und Stationswerten, keine amtliche Warnung. Im Zweifel bleibt das Schiff im Hafen.</p>
+
+<h2>Was die App macht</h2>
+<ul>
+  <li>Windprognosen von bis zu zwölf Modellen (ECMWF, ICON, GFS und weitere) für neun Törn-Spots in der Kvarner-Bucht, eigene Spots und den aktuellen Standort.</li>
+  <li>Bora-Ampel und Gewitterrisiko je Spot mit Begründung, Bora-Barometer aus der Druckdifferenz Zagreb–Split.</li>
+  <li>Meteoalarm-Warnungen für Kvarner, Velebit-Kanal und Region Rijeka, DHMZ-Seewetterbericht und Stationswerte, Etappen-Check, Widget und Watch-App.</li>
+  <li>Alles auf dem Gerät, ohne Konto. Der letzte Abruf bleibt offline sichtbar.</li>
+</ul>
+
+<h2>Support</h2>
+<p>Fragen, Fehler, Wünsche: <a href="mailto:lange.markus1@gmail.com">lange.markus1@gmail.com</a></p>
+
+<h2>Häufige Fragen</h2>
+<p><strong>Wie kommt die Bora-Ampel aufs Widget oder die Watch?</strong><br>Sperrbildschirm lange drücken › Anpassen › Widget hinzufügen › KvarnerWind, dann das Widget antippen und den Spot wählen. Auf der Watch: Zifferblatt gedrückt halten › Bearbeiten › Komplikationen › KvarnerWind.</p>
+<p><strong>Warum zeigt das Widget nur die neun Törn-Spots?</strong><br>Widget und Watch holen ihre Daten selbst und kennen eigene Spots und „Hier“ noch nicht.</p>
+<p><strong>Wie wird die Ampel berechnet?</strong><br>Rot, wenn ein Modell in den nächsten 24 Stunden Böen ab 20 kn mit einem Verhältnis Böe zu Mittelwind über 1,6 aus 30–90° zeigt, oder eine Meteoalarm-Warnung ab Orange für die Region gilt, oder eine Station mehr als 20 kn aus Nordost meldet. Gelb bei den abgeschwächten Kriterien. Die Schwellen lassen sich in den Einstellungen ändern.</p>
+<p><strong>Warum fehlen Daten?</strong><br>Die Modelle reichen unterschiedlich weit (ICON-D2 etwa 2,7 Tage, ECMWF 10 Tage). Ohne Netz zeigt die App den letzten Abruf mit Zeitstempel.</p>
+
+<h2>Datenquellen und Lizenzen</h2>
+<ul>
+  <li>Wetterdaten: <a href="https://open-meteo.com">Open-Meteo.com</a> (CC BY 4.0) mit Modellen von ECMWF, DWD, NOAA, ARPAE, MeteoSchweiz, Météo-France, UK Met Office, Environment Canada und JMA.</li>
+  <li>Warnungen: Državni hidrometeorološki zavod (DHMZ) über <a href="https://www.meteoalarm.org">www.meteoalarm.org</a> (EUMETNET, CC BY 4.0).</li>
+  <li>Stationswerte, Seewetterbericht und ALADIN-Karten: <a href="https://meteo.hr">DHMZ</a> (Izvor: DHMZ, Open Licence Republik Kroatien).</li>
+  <li>Karte: Apple Maps.</li>
+</ul>
+<p class="small">Time delays between this website and the www.meteoalarm.org website are possible. For the most up-to-date awareness information as published by the participating National Meteorological and Hydrological Services, please refer to <a href="https://www.meteoalarm.org">www.meteoalarm.org</a>.</p>
+
+<h2>Datenschutz</h2>
+<p>KvarnerWind erhebt keine Daten. Wetterabfragen gehen direkt an die Datendienste, nur mit den Koordinaten der Spots. <a href="datenschutz.html">Datenschutzerklärung</a></p>
+
+<footer>
+  <a href="https://carguard.app/impressum">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · © 2026 Markus Lange
+</footer>
+</body>
+</html>
